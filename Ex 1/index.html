@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="demo">Hai Welcome!! EXAMPLE 1</p>
+
+<h1 id="id01">Old Heading EXAMPLE 2</h1>
+
+
+<p id="p1">Hello World! EXAMPLE 3</p>
+<p id="p2">Hello World! EXAMPLE 3</p>
+
+<h1 id="id1">My Heading 1 EXAMPLE 4</h1>
+
+<button type="button" 
+onclick="document.getElementById('id1').style.color = 'blue'">
+Click Me!</button>
+
+<p id="p1">EXAMPLE 5
+    This is a text.
+    This is a text.
+    This is a text.
+    This is a text.
+    </p>
+    
+    <input type="button" value="Hide text" onclick="document.getElementById('p1').style.visibility='hidden'">
+    <input type="button" value="Show text" onclick="document.getElementById('p1').style.visibility='visible'">
+
+    <h1 onclick="this.innerHTML='Ooops!'">EXAMPLE 6...Click on this text!</h1>
+    <h1 onclick="changeText(this)">Click on this text!</h1>
+
+    
+    <p>Click the button to display the date.</p>
+
+    <button onclick="displayDate()">The time is? EXAMPLE 7</button>
+    <p>Click "Try it" to execute the displayDate() function.</p>
+
+<button id="myBtn">Try it</button>
+
+<p id="dem"></p>
+
+Enter your name: <input type="text" id="fname" onchange="myFunction()">
+
+<p>EXAMPLE 8...When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+Click Me</div>
+
+
+<script src='index.js'></script>
+
+</body>
+</html>
